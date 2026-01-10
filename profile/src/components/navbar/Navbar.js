@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useParams } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const pathname = useParams().pathname || "/";
 
   const navLinks = [
     { name: "home", href: "/" },
@@ -16,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#282C33] border-b border-gray-700 font-mono">
+    <nav className="bg-[#282C33]  border-b border-gray-700 font-mono">
       <div className="flex items-center justify-between px-8 py-6">
         {/* Logo */}
         <div className="text-md font-bold text-white flex items-center gap-2">
@@ -26,17 +28,20 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8">
-          {navLinks.map((link) => (
-            <li key={link.name} className="list-none">
-              <span className="text-[#C778DD] font-bold">#</span>
-              <Link
-                href={link.href}
-                className="text-[#ABB2BF] hover:text-white transition-colors"
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <li key={link.name} className="list-none">
+                <span className="text-[#C778DD] font-bold">#</span>
+                <Link
+                  href={link.href}
+                  className={`transition-colors ${isActive ? "text-white font-medium" : "text-[#ABB2BF] hover:text-white"}`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
         </div>
 
         {/* Hamburger Icon */}
