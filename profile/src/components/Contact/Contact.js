@@ -21,7 +21,7 @@ const Contact = () => {
 
         {/* Right Side: Contact Box */}
         <div className="border border-[#ABB2BF] p-4 min-w-[300px] self-start bg-[#282C33]">
-          <h3 className="text-white font-semibold mb-4">Message me here</h3>
+          <h3 className="text-white font-semibold mb-4">Message me(click) here </h3>
           
           <div className="space-y-4">
             {/* WhatsApp Link */}

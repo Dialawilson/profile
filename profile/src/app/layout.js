@@ -1,6 +1,7 @@
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const FiraCode = Fira_Code({
   variable: "--font-fira-code",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
