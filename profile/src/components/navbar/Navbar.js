@@ -22,8 +22,8 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-8 py-6">
         {/* Logo */}
         <div className="text-md font-bold text-white flex items-center gap-2">
-          <span className="text-[#C778DD]">{"</>"}</span>
-          <Link href="/">Dev/Wilson</Link>
+          <span className="text-[#C778DD]">{"<logic/>"}</span>
+          <Link href="/">Wilson</Link>
         </div>
 
         {/* Desktop Navigation */}

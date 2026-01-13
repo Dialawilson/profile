@@ -36,7 +36,7 @@ const Hero = () => {
             <div className="flex items-center gap-3 border border-[#ABB2BF] p-2 -mt-\[1px] bg-[#282C33]">
               <div className="w-4 h-4 bg-[#C778DD]" />
               <p className="text-sm">
-                Currently working on <span className="text-white">Portfolio</span>
+                Currently working on <span className="text-white">APP</span>
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="absolute -top-4 left-4 bg-[#282C33] p-2 border border-[#ABB2BF]">
               <Image src={quoteIcon} alt="quote" className="w-4 h-4" />
             </div>
-            <p className="text-2xl text-white">With great power comes great electricity bill</p>
+            <p className="text-2xl text-white">Prioritizing Knowledge and Intelligence Leads To Wealth</p>
           </div>
           
           {/* Author Box */}

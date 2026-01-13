@@ -3,7 +3,8 @@ import Link from "next/link";
 import Ogonisubmit from "@/asset/img/ogonisubmit.png";
 import Coodeck from "@/asset/img/coodeck.png";
 import HogoBoss from "@/asset/img/hogoboss.png";
-import Oly from "@/asset/img/oly.png"
+import Oly from "@/asset/img/oly.png";
+import YumQuick from "@/asset/img/mobileapp.png";
 
 
 export default function Works() {
@@ -42,7 +43,17 @@ export default function Works() {
          tools: "REACT TAILWIND", 
          title: "Oly  Ecommerce", 
          detail: "A ecommerce site for tiktoc vendors.",
-         href:"https://dialawilson.github.io/HUGOBOSS/",
+         href:"https://www.oly.com/",
+         linkinfo:"live"
+       },
+       
+        {
+         img: YumQuick, 
+         alt: "ecommers", 
+         tools: "DART FLUTTER", 
+         title: "YumQuick  Ecommerce", 
+         detail: "A ecommerce APP for RESTURANT food delivery.",
+         href:"https://dialawilson.github.io/YUMQUICK/",
          linkinfo:"live"
        },
   ];
@@ -61,9 +72,9 @@ export default function Works() {
       href: "/" 
     },
     { 
-      title: "Task Manager", 
-      skills: "React LocalStorage", 
-      detail: "Offline task tracker with drag-and-drop.",
+      title: "HSS site", 
+      skills: "HTML CSS JAVASCRIPT", 
+      detail: "Harmony steel scafolding website.",
       href: "/works" 
     },
   ];
