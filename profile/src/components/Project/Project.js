@@ -1,10 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import Ogonisubmit from "@/asset/img/ogonisubmit.png";
-import work1 from "@/asset/img/work2.png";
 import Coodeck from "@/asset/img/coodeck.png";
-// import HogoBoss from "@/asset/img/hugoboss.png";
-// import Oly from "@/asset/img/oly.png"
+import HogoBoss from "@/asset/img/hogoboss.png";
 
 const Project = () => {
   const projects = [
@@ -14,7 +12,7 @@ const Project = () => {
       tools: "REACT TAILWIND SHEETDB", 
       title: "Ogoni Enterpreneurship Summit", 
       detail: "An Event postfolio and regesteration site.",
-      href:"#" ,
+      href:"https://www.ogonisummit.com/" ,
       linkinfo:"live"
     },
     { 
@@ -28,11 +26,13 @@ const Project = () => {
 
     },
     { 
-      img: work1, 
-      alt: "Kahoot Clone", 
-      tools: "VUE NODE.JS SOCKET.IO", 
-      title: "Kahoot Clone", 
-      detail: "Real-time multiplayer quiz platform for students." 
+      img: HogoBoss, 
+      alt: "HogoBoss portfolio", 
+      tools: "REACT TAILWIND", 
+      title: "HogoBoss", 
+      detail: "A basic portfolio site",
+      href:"https://dialawilson.github.io/HUGOBOSS/",
+      linkinfo:"live"
     },
   ];
 
@@ -47,7 +47,7 @@ const Project = () => {
           <div className="h-[1px] bg-[#C778DD] flex-grow max-w-[300px] hidden md:block"></div>
         </div>
         <Link 
-          href="/project" 
+          href="/works" 
           className="text-white hover:text-[#C778DD] transition-colors whitespace-nowrap"
         >
           View all <span className="tracking-tighter">~~&gt;</span>

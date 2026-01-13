@@ -1,46 +1,64 @@
 import Image from "next/image";
 import Link from "next/link";
-// Ensure these paths match your folder structure exactly
-import work1 from "@/asset/img/work2.png";
-import work2 from "@/asset/img/work3.png";
+import Ogonisubmit from "@/asset/img/ogonisubmit.png";
+import Coodeck from "@/asset/img/coodeck.png";
+import HogoBoss from "@/asset/img/hogoboss.png";
+import Oly from "@/asset/img/oly.png"
+
 
 export default function Works() {
   const completedApps = [
-    { 
-      img: work1, 
-      alt: "ChertNodes Project", 
-      tools: "HTML CSS PYTHON", 
-      title: "ChertNodes", 
-      detail: "Minecraft servers hosting service with high performance." 
-    },
-    { 
-      img: work2, 
-      alt: "ProtectX Project", 
-      tools: "REACT NEXT.JS TAILWIND", 
-      title: "ProtectX", 
-      detail: "Discord bot for server protection and moderation." 
-    },
-    { 
-      img: work1, 
-      alt: "Kahoot Clone", 
-      tools: "VUE NODE.JS SOCKET.IO", 
-      title: "Kahoot Clone", 
-      detail: "Real-time multiplayer quiz platform for students." 
-    }
+   { 
+         img: Ogonisubmit, 
+         alt: "Ogoni submit Project", 
+         tools: "REACT TAILWIND SHEETDB", 
+         title: "Ogoni Enterpreneurship Summit", 
+         detail: "An Event postfolio and regesteration site.",
+         href:"https://www.ogonisummit.com/" ,
+         linkinfo:"live"
+       },
+       { 
+         img: Coodeck, 
+         alt: "Coodeck Project", 
+         tools: "REACT NEXT.JS TAILWIND POSTGRESS", 
+         title: "Coodeck", 
+         detail: "Coodeck is now know as anthena is AI-matched talent and seamless project execution.", 
+         href:"https://www.useanthena.com/",
+         linkinfo:"live"
+   
+       },
+       { 
+         img: HogoBoss, 
+         alt: "HogoBoss portfolio", 
+         tools: "REACT TAILWIND", 
+         title: "HogoBoss", 
+         detail: "A basic portfolio site",
+         href:"https://dialawilson.github.io/HUGOBOSS/",
+         linkinfo:"live"
+       },
+       { 
+         img: Oly, 
+         alt: "ecommers", 
+         tools: "REACT TAILWIND", 
+         title: "Oly  Ecommerce", 
+         detail: "A ecommerce site for tiktoc vendors.",
+         href:"https://dialawilson.github.io/HUGOBOSS/",
+         linkinfo:"live"
+       },
   ];
 
   const smallProjects = [
     { 
-      title: "Discord Bot", 
-      skills: "JS Node.js Discord.js", 
-      detail: "A simple bot for managing server roles.",
+      title: "Task Manager", 
+      skills: "PYTHON FLET", 
+      detail: "A simple task manager using python and flet for UI.",
       href: "/works" 
     },
     { 
-      title: "Portfolio v1", 
-      skills: "HTML CSS JS", 
+      title: "Profile v1", 
+      skills: "TAILWIND NEXT.JS", 
       detail: "My very first portfolio website.",
-      href: "/works" 
+      href: "/" 
     },
     { 
       title: "Task Manager", 
@@ -78,9 +96,9 @@ export default function Works() {
                 <h4 className="text-2xl text-white font-medium mb-4">{wks.title}</h4>
                 <p className="mb-6 flex-grow">{wks.detail}</p>
                 <div className="flex gap-4">
-                  <button className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
-                    Live {"<~>"}
-                  </button>
+                  <Link href={wks.href} className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
+                    {wks.linkinfo} {"<~>"}
+                  </Link>
                 </div>
               </div>
             </div>
