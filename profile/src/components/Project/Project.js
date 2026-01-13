@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Ogonisubmit from "@/asset/img/ogonisubmit.png";
 import work1 from "@/asset/img/work2.png";
+import Coodeck from "@/asset/img/coodeck.png";
+// import HogoBoss from "@/asset/img/hugoboss.png";
+// import Oly from "@/asset/img/oly.png"
 
 const Project = () => {
   const projects = [
@@ -15,11 +18,14 @@ const Project = () => {
       linkinfo:"live"
     },
     { 
-      img: work1, 
-      alt: "ProtectX Project", 
-      tools: "REACT NEXT.JS TAILWIND", 
-      title: "ProtectX", 
-      detail: "Discord bot for server protection and moderation." 
+      img: Coodeck, 
+      alt: "Coodeck Project", 
+      tools: "REACT NEXT.JS TAILWIND POSTGRESS", 
+      title: "Coodeck", 
+      detail: "Coodeck is now know as anthena is AI-matched talent and seamless project execution.", 
+      href:"https://www.useanthena.com/",
+      linkinfo:"live"
+
     },
     { 
       img: work1, 
@@ -72,7 +78,7 @@ const Project = () => {
               <p className="text-[#ABB2BF] mb-6 flex-grow">{project.detail}</p>
               
               <div className="flex gap-4">
-                <Link alt={project.alt} href={project.href || "#"} className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
+                <Link alt={project.alt} target="_blank" href={project.href || "#"} className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
                   {project.linkinfo} <span className="text-sm">{"<~>"}</span>
                 </Link>
                 {/* Optional: Add a Cached/Github button for extra professionalism */}
