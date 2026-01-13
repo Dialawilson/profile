@@ -1,5 +1,4 @@
 import About from "@/components/About/About";
-import Contact from "@/components/Contact/Contact";
 import Hero from "@/components/Hero/Hero";
 import Project from "@/components/Project/Project";
 import Skills from "@/components/Skills/skills";
@@ -16,8 +15,7 @@ export default function Home() {
       {/* skills Section */}
       <About/>
       {/* about section */}
-      <Contact/>
-      {/* contact section  */}
+     
     </main>
     </>
   );

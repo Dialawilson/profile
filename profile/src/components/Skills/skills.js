@@ -3,11 +3,12 @@ import skImg from "@/asset/img/skImg.png";
 
 const Skills = () => {
   const skillGroups = [
-    { title: "Languages", skills: "JavaScript TypeScript Dart Python" },
-    { title: "Databases", skills: "SQLite MongoDB PostgreSQL Firebase" },
-    { title: "Tools", skills: "VSCode Git Figma Postman Linux Docker" },
-    { title: "Other", skills: "HTML CSS EJS SCSS REST" },
-    { title: "Frameworks", skills: "React Next.js Flutter Tailwind Express" },
+    { title: "Languages", skills: "JavaScript, TypeScript, Dart, Python" },
+    { title: "Databases", skills: "SQLite, MongoDB, PostgreSQL, Firebase" },
+    { title: "Tools", skills: "VSCode, Git, Figma, Postman, Linux" },
+    { title: "Other", skills: "HTML, CSS, PHP, REST" },
+    { title: "Frameworks", skills: "React, Next.js, Flutter, Tailwind, Express" },
+    { title: "Softskills", skills: "Teamwork,  Time Management, Accountable, Communication" },
   ];
 
   return (

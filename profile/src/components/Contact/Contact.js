@@ -2,7 +2,7 @@ import { Mail, Phone } from "lucide-react"; // Optional: Use an icon library lik
 
 const Contact = () => {
   return (
-    <section className="text-[#ABB2BF] font-mono py-16 px-6 md:px-24 bg-[#282C33]">
+    <section id="#contacts" className="text-[#ABB2BF] font-mono py-16 px-6 md:px-24 bg-[#282C33]">
       {/* Section Header */}
       <div className="flex items-center gap-4 w-full mb-12">
         <h3 className="text-3xl text-white font-medium">

@@ -17,9 +17,9 @@ const Hero = () => {
           <p className="text-lg md:text-xl max-w-lg leading-relaxed">
             He crafts responsive websites where technologies meet creativity.
           </p>
-          <button className="border border-[#C778DD] text-white font-medium px-6 py-3 hover:bg-[#C778DD]/20 transition-all duration-300">
+          {/* <button className="border border-[#C778DD] text-white font-medium px-6 py-3 hover:bg-[#C778DD]/20 transition-all duration-300">
             Contact Me !!
-          </button>
+          </button> */}
         </div>
 
         {/* Right Side: Profile & Status */}

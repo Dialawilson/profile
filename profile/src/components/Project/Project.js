@@ -1,15 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import work1 from "@/asset/img/work1.jpg";
+import Ogonisubmit from "@/asset/img/ogonisubmit.png";
+import work1 from "@/asset/img/work2.png";
 
 const Project = () => {
   const projects = [
     { 
-      img: work1, 
-      alt: "ChertNodes Project", 
-      tools: "HTML CSS PYTHON", 
-      title: "ChertNodes", 
-      detail: "Minecraft servers hosting service with high performance." 
+      img: Ogonisubmit, 
+      alt: "Ogoni submit Project", 
+      tools: "REACT TAILWIND SHEETDB", 
+      title: "Ogoni Enterpreneurship Summit", 
+      detail: "An Event postfolio and regesteration site.",
+      href:"#" ,
+      linkinfo:"live"
     },
     { 
       img: work1, 
@@ -69,9 +72,9 @@ const Project = () => {
               <p className="text-[#ABB2BF] mb-6 flex-grow">{project.detail}</p>
               
               <div className="flex gap-4">
-                <button className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
-                  Live <span className="text-sm">{"<~>"}</span>
-                </button>
+                <Link alt={project.alt} href={project.href || "#"} className="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/20 transition-all">
+                  {project.linkinfo} <span className="text-sm">{"<~>"}</span>
+                </Link>
                 {/* Optional: Add a Cached/Github button for extra professionalism */}
                 <button className="border border-[#ABB2BF] text-[#ABB2BF] px-4 py-2 hover:bg-[#ABB2BF]/10 transition-all">
                   Cached

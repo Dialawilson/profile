@@ -1,13 +1,20 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import Contact from "../Contact/Contact";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
+    <>
+    <div>
+
+      <Contact/>
+    </div>
     <footer className="px-6 md:px-24 py-12 font-mono bg-[#282C33] border-t border-[#ABB2BF]/20">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-12">
+          
           
           {/* Brand Section */}
           <div className="space-y-4">
@@ -47,6 +54,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
